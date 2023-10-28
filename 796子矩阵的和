@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main{
     private static int n, m, q;
-    private static final int N =1010;
+    private static final int N =1010;//
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
