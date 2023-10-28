@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class main {
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);//
     static int a[] = new int[100010];//原数组
     static int s[] = new int[100010];//前缀和数组
 
