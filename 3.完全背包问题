@@ -1,1 +1,26 @@
-
+#include <iostream>
+using namespace std;
+#define N 1005
+int Asd[N][N];//Asd[i][j]表示前 i 个物品，背包容量是 j 的情况下的最大价值。
+int Value[N];
+int Vol[N];
+ 
+int main()
+{
+	int n, Volume;//物品数和容量
+	cin >> n >> Volume;
+	for(int i = 1; i <= n; i++)
+		cin >> Vol[i] >> Value[i];
+ 
+	for(int i = 1; i <= n; i++) {             
+		for(int j = 1; j <= Volume; j++) {     
+			Asd[i][j] = Asd[i-1][j]; 
+			if(j >= Vol[i]) 
+				Asd[i][j] = max(Asd[i][j], Asd[ i ][ j-Vol[i] ] + Value[i]);
+		} 
+	}
+	cout << Asd[n][Volume] <<endl;
+	return 0;
+}
+ 
+ 
