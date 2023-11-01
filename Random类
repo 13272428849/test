@@ -1,0 +1,24 @@
+package step4;
+
+import java.util.Random;
+
+public class RandomClass {
+    public static void main(String[] args) {
+
+        // ---------------------Begin------------------------
+       Random r=new Random(2022);
+       for(int i=0;i<5;i++){
+           System.out.println(r.nextInt());
+       }
+         for(int i=0;i<5;i++){
+           System.out.println(r.nextDouble());
+       }
+       
+
+
+
+
+        // ---------------------End------------------------
+
+    }
+}
