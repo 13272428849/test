@@ -11,7 +11,7 @@ public class RandomClass {
            System.out.println(r.nextInt());
        }
          for(int i=0;i<5;i++){
-           System.out.println(r.nextDouble());
+           System.out.println(r.nextDouble());//
        }
        
 
