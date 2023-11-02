@@ -1,0 +1,22 @@
+/*请在下面的【】处补充代码*/
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+public class Today {
+
+	public static void main(String[] args) {
+		//输入指定的日期：年、月、日
+        int year,month,day; 
+		Scanner sc=new Scanner(System.in);
+        year=sc.nextInt();
+        month=sc.nextInt();
+        day=sc.nextInt();
+		// 用输入的日期 创建日期对象date 
+		LocalDate date  = LocalDate.of(year, month, day); 	     
+
+
+        //输出指定日期和星期几
+		System.out.println("今天是"+date.getYear()+" "+date.getMonth()+" "+date.getDayOfMonth()+" "+date.getDayOfWeek());
+	}
+}
