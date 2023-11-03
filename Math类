@@ -8,7 +8,7 @@ int value2 = scanner.nextInt();
 // ---------------------Begin------------------------
 /**
 1.求出变量value1的绝对值
-2.求出value1的3次幂//
+2.求出value1的3次幂
 3.求出value1的二次方根
 4.求出value1的sin值
 5.求出value1与value2中的较大者
