@@ -1,0 +1,24 @@
+package step3;
+import java.util.Scanner;
+public class MathClass {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+int value1 = scanner.nextInt();
+int value2 = scanner.nextInt();
+// ---------------------Begin------------------------
+/**
+1.求出变量value1的绝对值
+2.求出value1的3次幂
+3.求出value1的二次方根
+4.求出value1的sin值
+5.求出value1与value2中的较大者
+* */
+System.out.println(String.format("value1=%d, value2=%d", value1, value2));
+System.out.println(String.format("value1的绝对值为：%d", Math.abs(value1)));
+System.out.println(String.format("value1的3次幂为：%f", Math.pow(value1, 3)));
+System.out.println(String.format("value1的2次方根为：%f", Math.sqrt(value1)));
+System.out.println(String.format("value1的sin值为：%f", Math.sin(value1)));
+System.out.println(String.format("value1与value2中的较大者为：%d", Math.max(value1, value2)));
+// ---------------------End------------------------
+}
+}
