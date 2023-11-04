@@ -1,0 +1,25 @@
+package step2;
+
+import java.util.Scanner;
+
+public class StringBufferLearning {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        String inputString = scanner.next();
+        StringBuffer stringBuffer = new StringBuffer(inputString);
+
+        // ---------------------Begin------------------------
+        String add="educode";
+        stringBuffer.append(add);
+
+        System.out.println("添加数据后：" + stringBuffer);
+        System.out.println("删除5-8的字符串后：" + stringBuffer.delete(5,8));
+        System.out.println("替换7-13的字符串后：" + stringBuffer.replace(7,13,"world"));
+        System.out.println("截取1-10的字符串为：" + stringBuffer.substring(1,10));
+        System.out.println("反转后的字符串为：" + stringBuffer.reverse());
+        // ---------------------End------------------------
+
+    }
+}
