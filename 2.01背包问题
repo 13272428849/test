@@ -2,7 +2,7 @@
 using namespace std;
 #define N 1005
 int Asd[N][N]; //Asd[i][j]表示前 i 个物品，背包容量是 j 的情况下的最大价值。
-int Value[N];////
+int Value[N];///
 int Vol[N];
  
 int main()
